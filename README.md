@@ -2,6 +2,8 @@
 
 Tweet random words from your favorite book.  Pretty neat! I did Pride and Prejudice. 
 
+![alt text](https://github.com/GraceDurham/Markov-Chains-and-Twitter/blob/master/PrideandPrejudicetweet.png)
+
 
 ```
 git clone https://github.com/GraceDurham/Markov-Chains-and-Twitter.git
