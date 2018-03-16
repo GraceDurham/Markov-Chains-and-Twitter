@@ -53,3 +53,7 @@ pip install -r requirements.txt
 
 ![alt text](https://github.com/GraceDurham/Markov-Chains-and-Twitter/blob/master/random_tweet.png)
 
+#### Check your twitter account and see the results! 
+
+![alt text](https://github.com/GraceDurham/Markov-Chains-and-Twitter/blob/master/screenshot_tweet.png)
+
