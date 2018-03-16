@@ -1,4 +1,4 @@
-# Markov-Chains-and-Twitter WIP
+# Markov-Chains-and-Twitter 
 
 Tweet random words from your favorite book.  Pretty neat! I did Pride and Prejudice. 
 
@@ -24,7 +24,7 @@ cd Markov-Chains-and-Twitter
 ![alt text](https://github.com/GraceDurham/Markov-Chains-and-Twitter/blob/master/CreatingYour%20SecretsFile.png)
 
 ```
-Secrets file is not provided in terminal please create a file called secrets.sh by doing touch secrets.sh
+Secrets file is not provided. In terminal please create a file called secrets.sh by doing touch secrets.sh
 ```
 
 
