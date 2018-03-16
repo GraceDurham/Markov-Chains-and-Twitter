@@ -26,6 +26,10 @@ cd Markov-Chains-and-Twitter
 ```
 Secrets file is not provided in terminal please create a file called secrets.sh by doing touch secrets.sh
 ```
+
+
+![alt text](https://github.com/GraceDurham/Markov-Chains-and-Twitter/blob/master/sourcesecrets.sh_instructions.png)
+
 ### Create .gitignore file and add secrets.sh to it 
 
 ![alt text](https://github.com/GraceDurham/Markov-Chains-and-Twitter/blob/master/Create%20.gitignore%20file%20and%20add%20secrets.sh%20to%20it.png)
@@ -43,3 +47,9 @@ source venv/bin/activate
 ```
 pip install -r requirements.txt
 ```
+#### Run in terminal python markovsolution.py prideandprejudice.txt. If pride and prejudice is not your flavor you can choose a different text file in the respository
+
+![alt text](https://github.com/GraceDurham/Markov-Chains-and-Twitter/blob/master/instructions_python_file_and_txt.png)
+
+![alt text](https://github.com/GraceDurham/Markov-Chains-and-Twitter/blob/master/random_tweet.png)
+
