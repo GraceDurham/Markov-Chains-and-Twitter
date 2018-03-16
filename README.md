@@ -26,7 +26,9 @@ cd Markov-Chains-and-Twitter
 ```
 Secrets file is not provided in terminal please create a file called secrets.sh by doing touch secrets.sh
 ```
+### Create .gitignore file and add secrets.sh to it 
 
+![alt text](https://github.com/GraceDurham/Markov-Chains-and-Twitter/blob/master/Create%20.gitignore%20file%20and%20add%20secrets.sh%20to%20it.png)
 
 #### Create and run virtual environment on command line
 
