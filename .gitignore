@@ -1,0 +1,6 @@
+secrets.sh
+env
+venv
+*.pyc
+.DS_Store
+prideandprejudicepractice.txt
