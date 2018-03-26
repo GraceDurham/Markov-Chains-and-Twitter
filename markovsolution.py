@@ -2,7 +2,8 @@ import os
 import sys
 import twitter
 from random import choice
-from unidecode import unidecode
+# from unidecode import unidecode
+import io
 
 
 def open_and_read_file(filenames):
@@ -15,7 +16,7 @@ def open_and_read_file(filenames):
     body = ""
 
     for filename in filenames:
-        text_file = open(filename)
+        text_file = io.open(filename, encoding="utf-8")
         body = body + text_file.read()
         text_file.close
 
@@ -28,16 +29,19 @@ def make_chains(text_string):
     chains = {}
 
     words = text_string.split()
+    print words
 
-    my_clean_list = [unidecode(x.decode('utf8')) for x in words]
-    print my_clean_list
+    # my_clean_list = [unidecode(x.decode('utf8')) for x in words]
+    # print my_clean_list
 
 
-    for i in range(len(my_clean_list) - 2):
-        key = (my_clean_list[i], my_clean_list[i + 1])
-        value = my_clean_list[i + 2]
+    # for i in range(len(my_clean_list) - 2):
+    #     key = (my_clean_list[i], my_clean_list[i + 1])
+    #     value = my_clean_list[i + 2]
+    for i in range(len(words) - 2):
+        key = (words[i], words[i + 1])
+        value = words[i + 2]
       
-
         if key not in chains:
             chains[key] = []
 
@@ -76,6 +80,7 @@ def tweet(chains):
 
     while True:
         status = api.PostUpdate(make_text(chains))
+        print status
         print status.text
         print #blank line
         response = raw_input("Enter to tweet again [q to quit] > ")
@@ -84,12 +89,15 @@ def tweet(chains):
 
 
 filenames = sys.argv[1:]
+#sys.argv is a list in Python, which contains the command-line arguments passed to the script. 
+
 
 # Open the file and turn it into one long string
 input_text = open_and_read_file(filenames)
 
 # Get a Markov chain
 chains = make_chains(input_text)
+print chains
 
 make_text(chains)
 
